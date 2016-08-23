@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DDF483D1F8C9C0D085330E2 /* Pods_ExcusesGeneratorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500D0BB73601286645ED9A45 /* Pods_ExcusesGeneratorUITests.framework */; };
+		2F7285FCD1254953D943BCAC /* Pods_ExcusesGeneratorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 052095B785D153216521568E /* Pods_ExcusesGeneratorTests.framework */; };
+		96E87BB4D0C6B87A0151BE5D /* Pods_ExcusesGenerator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDF20C8B921FD6D8091E498B /* Pods_ExcusesGenerator.framework */; };
+		9D2A489F1D6CB4A5002A6253 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D2A489E1D6CB4A5002A6253 /* RealmSwift.framework */; };
+		9D37242D1D6C808300977442 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D37242C1D6C808300977442 /* Alamofire.framework */; };
+		9D37242E1D6C808300977442 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D37242C1D6C808300977442 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9D815FC51D6C8224007FDE5B /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D815FC41D6C8224007FDE5B /* SwiftyJSON.framework */; };
+		9D815FC61D6C8224007FDE5B /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D815FC41D6C8224007FDE5B /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9DF142DF1D6CB99C0058891B /* UsingRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF142DE1D6CB99C0058891B /* UsingRealm.swift */; };
 		9DF96EFB1D6C71D000911843 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF96EFA1D6C71D000911843 /* AppDelegate.swift */; };
 		9DF96EFD1D6C71D000911843 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF96EFC1D6C71D000911843 /* ViewController.swift */; };
 		9DF96F001D6C71D000911843 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF96EFE1D6C71D000911843 /* Main.storyboard */; };
@@ -14,6 +23,7 @@
 		9DF96F051D6C71D000911843 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF96F031D6C71D000911843 /* LaunchScreen.storyboard */; };
 		9DF96F101D6C71D100911843 /* ExcusesGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF96F0F1D6C71D100911843 /* ExcusesGeneratorTests.swift */; };
 		9DF96F1B1D6C71D100911843 /* ExcusesGeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF96F1A1D6C71D100911843 /* ExcusesGeneratorUITests.swift */; };
+		9DF96F291D6C72AC00911843 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF96F281D6C72AC00911843 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +43,33 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9D37242F1D6C808300977442 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9D815FC61D6C8224007FDE5B /* SwiftyJSON.framework in Embed Frameworks */,
+				9D37242E1D6C808300977442 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		052095B785D153216521568E /* Pods_ExcusesGeneratorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExcusesGeneratorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		128940EBE9DE0C71F6894905 /* Pods-ExcusesGenerator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExcusesGenerator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExcusesGenerator/Pods-ExcusesGenerator.debug.xcconfig"; sourceTree = "<group>"; };
+		36B66B57991CEBE229C98F32 /* Pods-ExcusesGenerator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExcusesGenerator.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExcusesGenerator/Pods-ExcusesGenerator.release.xcconfig"; sourceTree = "<group>"; };
+		42338808D996EEA71CA63EBE /* Pods-ExcusesGeneratorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExcusesGeneratorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExcusesGeneratorUITests/Pods-ExcusesGeneratorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		45E76F0F6CED420B72D2255F /* Pods-ExcusesGeneratorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExcusesGeneratorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExcusesGeneratorUITests/Pods-ExcusesGeneratorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		500D0BB73601286645ED9A45 /* Pods_ExcusesGeneratorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExcusesGeneratorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CF120174B64EB403D2A4DA1 /* Pods-ExcusesGeneratorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExcusesGeneratorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExcusesGeneratorTests/Pods-ExcusesGeneratorTests.release.xcconfig"; sourceTree = "<group>"; };
+		9D2A489E1D6CB4A5002A6253 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "Pods/../build/Debug-iphoneos/RealmSwift/RealmSwift.framework"; sourceTree = "<group>"; };
+		9D37242C1D6C808300977442 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Alamofire.framework; path = "/Users/bgoncal/Library/Developer/Xcode/DerivedData/ExcusesGenerator-fpgtkhdcypyqjufguhaempfsugrq/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<absolute>"; };
+		9D815FC41D6C8224007FDE5B /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = SwiftyJSON.framework; path = "/Users/bgoncal/Library/Developer/Xcode/DerivedData/ExcusesGenerator-fpgtkhdcypyqjufguhaempfsugrq/Build/Products/Debug-iphoneos/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<absolute>"; };
+		9DF142DE1D6CB99C0058891B /* UsingRealm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsingRealm.swift; sourceTree = "<group>"; };
 		9DF96EF71D6C71D000911843 /* ExcusesGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExcusesGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DF96EFA1D6C71D000911843 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DF96EFC1D6C71D000911843 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +83,9 @@
 		9DF96F161D6C71D100911843 /* ExcusesGeneratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExcusesGeneratorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DF96F1A1D6C71D100911843 /* ExcusesGeneratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcusesGeneratorUITests.swift; sourceTree = "<group>"; };
 		9DF96F1C1D6C71D100911843 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DF96F281D6C72AC00911843 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		B394D20D4297744C0A15D934 /* Pods-ExcusesGeneratorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExcusesGeneratorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExcusesGeneratorTests/Pods-ExcusesGeneratorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EDF20C8B921FD6D8091E498B /* Pods_ExcusesGenerator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExcusesGenerator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +93,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D2A489F1D6CB4A5002A6253 /* RealmSwift.framework in Frameworks */,
+				96E87BB4D0C6B87A0151BE5D /* Pods_ExcusesGenerator.framework in Frameworks */,
+				9D37242D1D6C808300977442 /* Alamofire.framework in Frameworks */,
+				9D815FC51D6C8224007FDE5B /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F7285FCD1254953D943BCAC /* Pods_ExcusesGeneratorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,19 +112,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DDF483D1F8C9C0D085330E2 /* Pods_ExcusesGeneratorUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44EF0A10C571C7062ADCBB29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D2A489E1D6CB4A5002A6253 /* RealmSwift.framework */,
+				EDF20C8B921FD6D8091E498B /* Pods_ExcusesGenerator.framework */,
+				052095B785D153216521568E /* Pods_ExcusesGeneratorTests.framework */,
+				500D0BB73601286645ED9A45 /* Pods_ExcusesGeneratorUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9DF96EEE1D6C71D000911843 = {
 			isa = PBXGroup;
 			children = (
+				9D815FC41D6C8224007FDE5B /* SwiftyJSON.framework */,
+				9D37242C1D6C808300977442 /* Alamofire.framework */,
 				9DF96EF91D6C71D000911843 /* ExcusesGenerator */,
 				9DF96F0E1D6C71D100911843 /* ExcusesGeneratorTests */,
 				9DF96F191D6C71D100911843 /* ExcusesGeneratorUITests */,
 				9DF96EF81D6C71D000911843 /* Products */,
+				B5EFD9024C3DA1F419371019 /* Pods */,
+				44EF0A10C571C7062ADCBB29 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +159,12 @@
 			children = (
 				9DF96EFA1D6C71D000911843 /* AppDelegate.swift */,
 				9DF96EFC1D6C71D000911843 /* ViewController.swift */,
+				9DF96F281D6C72AC00911843 /* SecondViewController.swift */,
 				9DF96EFE1D6C71D000911843 /* Main.storyboard */,
 				9DF96F011D6C71D000911843 /* Assets.xcassets */,
 				9DF96F031D6C71D000911843 /* LaunchScreen.storyboard */,
 				9DF96F061D6C71D000911843 /* Info.plist */,
+				9DF142DE1D6CB99C0058891B /* UsingRealm.swift */,
 			);
 			path = ExcusesGenerator;
 			sourceTree = "<group>";
@@ -125,6 +187,19 @@
 			path = ExcusesGeneratorUITests;
 			sourceTree = "<group>";
 		};
+		B5EFD9024C3DA1F419371019 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				128940EBE9DE0C71F6894905 /* Pods-ExcusesGenerator.debug.xcconfig */,
+				36B66B57991CEBE229C98F32 /* Pods-ExcusesGenerator.release.xcconfig */,
+				B394D20D4297744C0A15D934 /* Pods-ExcusesGeneratorTests.debug.xcconfig */,
+				8CF120174B64EB403D2A4DA1 /* Pods-ExcusesGeneratorTests.release.xcconfig */,
+				45E76F0F6CED420B72D2255F /* Pods-ExcusesGeneratorUITests.debug.xcconfig */,
+				42338808D996EEA71CA63EBE /* Pods-ExcusesGeneratorUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +207,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9DF96F1F1D6C71D100911843 /* Build configuration list for PBXNativeTarget "ExcusesGenerator" */;
 			buildPhases = (
+				B058147D0B97E8AFB4797926 /* [CP] Check Pods Manifest.lock */,
 				9DF96EF31D6C71D000911843 /* Sources */,
 				9DF96EF41D6C71D000911843 /* Frameworks */,
 				9DF96EF51D6C71D000911843 /* Resources */,
+				66A2949CFB3B92712E7EB8B9 /* [CP] Embed Pods Frameworks */,
+				E343E86313A3C7DF8EFFB320 /* [CP] Copy Pods Resources */,
+				9D37242F1D6C808300977442 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,9 +228,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9DF96F221D6C71D100911843 /* Build configuration list for PBXNativeTarget "ExcusesGeneratorTests" */;
 			buildPhases = (
+				128F060CA3F287EB68EDA56D /* [CP] Check Pods Manifest.lock */,
 				9DF96F071D6C71D100911843 /* Sources */,
 				9DF96F081D6C71D100911843 /* Frameworks */,
 				9DF96F091D6C71D100911843 /* Resources */,
+				D82AA366D2535DBA3DEC89D4 /* [CP] Embed Pods Frameworks */,
+				309641D7D141D310DCC34B75 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +249,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9DF96F251D6C71D100911843 /* Build configuration list for PBXNativeTarget "ExcusesGeneratorUITests" */;
 			buildPhases = (
+				1C218610C66097217EF2182C /* [CP] Check Pods Manifest.lock */,
 				9DF96F121D6C71D100911843 /* Sources */,
 				9DF96F131D6C71D100911843 /* Frameworks */,
 				9DF96F141D6C71D100911843 /* Resources */,
+				4A525DDC5D2BB02D200883EF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +277,7 @@
 				TargetAttributes = {
 					9DF96EF61D6C71D000911843 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 994YWGHH7T;
 					};
 					9DF96F0A1D6C71D100911843 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -251,12 +336,137 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		128F060CA3F287EB68EDA56D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1C218610C66097217EF2182C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		309641D7D141D310DCC34B75 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExcusesGeneratorTests/Pods-ExcusesGeneratorTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A525DDC5D2BB02D200883EF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExcusesGeneratorUITests/Pods-ExcusesGeneratorUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66A2949CFB3B92712E7EB8B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExcusesGenerator/Pods-ExcusesGenerator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B058147D0B97E8AFB4797926 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D82AA366D2535DBA3DEC89D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExcusesGeneratorTests/Pods-ExcusesGeneratorTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E343E86313A3C7DF8EFFB320 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExcusesGenerator/Pods-ExcusesGenerator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9DF96EF31D6C71D000911843 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DF96F291D6C72AC00911843 /* SecondViewController.swift in Sources */,
 				9DF96EFD1D6C71D000911843 /* ViewController.swift in Sources */,
+				9DF142DF1D6CB99C0058891B /* UsingRealm.swift in Sources */,
 				9DF96EFB1D6C71D000911843 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,28 +607,45 @@
 		};
 		9DF96F201D6C71D100911843 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 128940EBE9DE0C71F6894905 /* Pods-ExcusesGenerator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/RealmSwift",
+				);
 				INFOPLIST_FILE = ExcusesGenerator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.panta.ExcusesGenerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		9DF96F211D6C71D100911843 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36B66B57991CEBE229C98F32 /* Pods-ExcusesGenerator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/RealmSwift",
+				);
 				INFOPLIST_FILE = ExcusesGenerator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.panta.ExcusesGenerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
 		9DF96F231D6C71D100911843 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B394D20D4297744C0A15D934 /* Pods-ExcusesGeneratorTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ExcusesGeneratorTests/Info.plist;
@@ -431,6 +658,7 @@
 		};
 		9DF96F241D6C71D100911843 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CF120174B64EB403D2A4DA1 /* Pods-ExcusesGeneratorTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ExcusesGeneratorTests/Info.plist;
@@ -443,6 +671,7 @@
 		};
 		9DF96F261D6C71D100911843 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45E76F0F6CED420B72D2255F /* Pods-ExcusesGeneratorUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = ExcusesGeneratorUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -454,6 +683,7 @@
 		};
 		9DF96F271D6C71D100911843 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42338808D996EEA71CA63EBE /* Pods-ExcusesGeneratorUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = ExcusesGeneratorUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -482,6 +712,7 @@
 				9DF96F211D6C71D100911843 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9DF96F221D6C71D100911843 /* Build configuration list for PBXNativeTarget "ExcusesGeneratorTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +721,7 @@
 				9DF96F241D6C71D100911843 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9DF96F251D6C71D100911843 /* Build configuration list for PBXNativeTarget "ExcusesGeneratorUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +730,7 @@
 				9DF96F271D6C71D100911843 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

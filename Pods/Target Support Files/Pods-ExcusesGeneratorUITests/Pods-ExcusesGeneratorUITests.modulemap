@@ -1,0 +1,6 @@
+framework module Pods_ExcusesGeneratorUITests {
+  umbrella header "Pods-ExcusesGeneratorUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
