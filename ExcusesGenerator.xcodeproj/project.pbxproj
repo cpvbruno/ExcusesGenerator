@@ -16,6 +16,9 @@
 		9D815FC51D6C8224007FDE5B /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D815FC41D6C8224007FDE5B /* SwiftyJSON.framework */; };
 		9D815FC61D6C8224007FDE5B /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D815FC41D6C8224007FDE5B /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9DF142DF1D6CB99C0058891B /* UsingRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF142DE1D6CB99C0058891B /* UsingRealm.swift */; };
+		9DF142E11D6CC64C0058891B /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DF142E01D6CC64C0058891B /* Realm.framework */; };
+		9DF142E21D6CC64C0058891B /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9DF142E01D6CC64C0058891B /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9DF142E41D6CD5700058891B /* ExcusesJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF142E31D6CD5700058891B /* ExcusesJob.swift */; };
 		9DF96EFB1D6C71D000911843 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF96EFA1D6C71D000911843 /* AppDelegate.swift */; };
 		9DF96EFD1D6C71D000911843 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF96EFC1D6C71D000911843 /* ViewController.swift */; };
 		9DF96F001D6C71D000911843 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF96EFE1D6C71D000911843 /* Main.storyboard */; };
@@ -50,6 +53,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				9DF142E21D6CC64C0058891B /* Realm.framework in Embed Frameworks */,
 				9D815FC61D6C8224007FDE5B /* SwiftyJSON.framework in Embed Frameworks */,
 				9D37242E1D6C808300977442 /* Alamofire.framework in Embed Frameworks */,
 			);
@@ -70,6 +74,8 @@
 		9D37242C1D6C808300977442 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Alamofire.framework; path = "/Users/bgoncal/Library/Developer/Xcode/DerivedData/ExcusesGenerator-fpgtkhdcypyqjufguhaempfsugrq/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<absolute>"; };
 		9D815FC41D6C8224007FDE5B /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = SwiftyJSON.framework; path = "/Users/bgoncal/Library/Developer/Xcode/DerivedData/ExcusesGenerator-fpgtkhdcypyqjufguhaempfsugrq/Build/Products/Debug-iphoneos/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<absolute>"; };
 		9DF142DE1D6CB99C0058891B /* UsingRealm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsingRealm.swift; sourceTree = "<group>"; };
+		9DF142E01D6CC64C0058891B /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Realm.framework; path = "/Users/bgoncal/Library/Developer/Xcode/DerivedData/ExcusesGenerator-fpgtkhdcypyqjufguhaempfsugrq/Build/Products/Debug-iphoneos/Realm/Realm.framework"; sourceTree = "<absolute>"; };
+		9DF142E31D6CD5700058891B /* ExcusesJob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExcusesJob.swift; sourceTree = "<group>"; };
 		9DF96EF71D6C71D000911843 /* ExcusesGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExcusesGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DF96EFA1D6C71D000911843 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DF96EFC1D6C71D000911843 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +103,7 @@
 				96E87BB4D0C6B87A0151BE5D /* Pods_ExcusesGenerator.framework in Frameworks */,
 				9D37242D1D6C808300977442 /* Alamofire.framework in Frameworks */,
 				9D815FC51D6C8224007FDE5B /* SwiftyJSON.framework in Frameworks */,
+				9DF142E11D6CC64C0058891B /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,9 +137,51 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9D07BC391D6CEFAA00AE57EB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9DF96EFC1D6C71D000911843 /* ViewController.swift */,
+				9DF96F281D6C72AC00911843 /* SecondViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		9D07BC3A1D6CEFC100AE57EB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9DF142DE1D6CB99C0058891B /* UsingRealm.swift */,
+				9DF142E31D6CD5700058891B /* ExcusesJob.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		9D07BC3B1D6CEFCE00AE57EB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9DF96EFE1D6C71D000911843 /* Main.storyboard */,
+				9DF96F031D6C71D000911843 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		9D07BC3C1D6CEFE000AE57EB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		9D07BC3F1D6CF0AE00AE57EB /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
 		9DF96EEE1D6C71D000911843 = {
 			isa = PBXGroup;
 			children = (
+				9DF142E01D6CC64C0058891B /* Realm.framework */,
 				9D815FC41D6C8224007FDE5B /* SwiftyJSON.framework */,
 				9D37242C1D6C808300977442 /* Alamofire.framework */,
 				9DF96EF91D6C71D000911843 /* ExcusesGenerator */,
@@ -157,14 +206,14 @@
 		9DF96EF91D6C71D000911843 /* ExcusesGenerator */ = {
 			isa = PBXGroup;
 			children = (
+				9D07BC3F1D6CF0AE00AE57EB /* Protocols */,
+				9D07BC3B1D6CEFCE00AE57EB /* Storyboards */,
+				9D07BC3A1D6CEFC100AE57EB /* Models */,
+				9D07BC391D6CEFAA00AE57EB /* Controllers */,
+				9D07BC3C1D6CEFE000AE57EB /* Presenter */,
 				9DF96EFA1D6C71D000911843 /* AppDelegate.swift */,
-				9DF96EFC1D6C71D000911843 /* ViewController.swift */,
-				9DF96F281D6C72AC00911843 /* SecondViewController.swift */,
-				9DF96EFE1D6C71D000911843 /* Main.storyboard */,
 				9DF96F011D6C71D000911843 /* Assets.xcassets */,
-				9DF96F031D6C71D000911843 /* LaunchScreen.storyboard */,
 				9DF96F061D6C71D000911843 /* Info.plist */,
-				9DF142DE1D6CB99C0058891B /* UsingRealm.swift */,
 			);
 			path = ExcusesGenerator;
 			sourceTree = "<group>";
@@ -468,6 +517,7 @@
 				9DF96EFD1D6C71D000911843 /* ViewController.swift in Sources */,
 				9DF142DF1D6CB99C0058891B /* UsingRealm.swift in Sources */,
 				9DF96EFB1D6C71D000911843 /* AppDelegate.swift in Sources */,
+				9DF142E41D6CD5700058891B /* ExcusesJob.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

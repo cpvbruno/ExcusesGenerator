@@ -10,6 +10,6 @@ import Foundation
 import Realm
 
 
-class ToDoItem: RLMObject {
+class ExcuseItem: RLMObject {
     dynamic var excuseName = ""
 }
